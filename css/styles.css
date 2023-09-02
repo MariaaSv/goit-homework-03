@@ -247,10 +247,6 @@ section {
   gap: 24px;
 }
 
-.team-container{
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .team-card {
   background-attachment: fixed;
@@ -260,8 +256,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc((100% - 72px) / 4);
   gap: 32px;
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -286,6 +282,8 @@ section {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .role {
@@ -331,6 +329,10 @@ align-items: flex-start;
 flex-shrink: 0;
 }
 
+.portfolio-container{
+  border-top: none;
+}
+
 .card-content-container{
   display: flex;
   padding: 0px 16px;
@@ -341,7 +343,6 @@ flex-shrink: 0;
   align-self: stretch;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
-  border-top: none;
 }
 
 .card-content {
