@@ -24,6 +24,7 @@ ol {
 
 img {
   display: block;
+  object-fit: cover;
 }
 
 section {
@@ -35,6 +36,7 @@ section {
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
@@ -66,6 +68,10 @@ section {
   padding-right: 76px;
 }
 
+.logotype-header{
+  margin-right: 76px;
+}
+
 .list,
 .link {
   list-style-type: none;
@@ -74,7 +80,7 @@ section {
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .menu-link {
@@ -84,6 +90,7 @@ section {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -93,7 +100,7 @@ section {
 
 .address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .address {
@@ -118,6 +125,7 @@ section {
   background-color: #2e2f42;
   height: 600px;
   flex-shrink: 0;
+  padding: 188px 0;
 }
 
 .first-section-container {
@@ -138,7 +146,7 @@ section {
   line-height: 1.07;
   text-align: center;
   color: white;
-  width: 496px;
+  max-width: 496px; 
   padding-top: 68px;
 }
 
@@ -152,7 +160,8 @@ section {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  display: inline-flex;
+  display: block;
+  min-width: 169px;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
@@ -160,6 +169,7 @@ section {
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-top: 48px;
+  border: none; 
 }
 
 .button:hover,
@@ -184,7 +194,7 @@ section {
 
 .feature-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .feature-item {
@@ -202,6 +212,7 @@ section {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .feature-description {
@@ -228,13 +239,18 @@ section {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-list{
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
+
+.team-container{
+  padding: 32px 0;
+}
+
 .team-card {
   background-attachment: fixed;
   background-color: white;
@@ -258,6 +274,8 @@ section {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-member-container{
@@ -275,6 +293,7 @@ section {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
   padding-bottom: 32px;
 }
 
@@ -283,10 +302,8 @@ section {
 .portfolio-list{
   display: flex;
   column-gap: 24px;
-}
-
-.first-portfolio-list{
-  padding-bottom: 48px;
+  flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .portfolio-title {
@@ -298,7 +315,7 @@ section {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .project-card {
@@ -309,7 +326,6 @@ height: 420px;
 padding-bottom: 0px;
 flex-direction: column;
 align-items: flex-start;
-gap: 32px;
 flex-shrink: 0;
 }
 
@@ -321,6 +337,8 @@ flex-shrink: 0;
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .card-content {
@@ -330,6 +348,7 @@ flex-shrink: 0;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .card-text {
   font-family: 'Roboto', sans-serif;
@@ -348,6 +367,7 @@ padding-bottom: 32px;
   width: 1440px;
 height: 312px;
 flex-shrink: 0;
+padding: 100px 0;
 }
 
 .logotype-footer{
@@ -355,8 +375,8 @@ flex-shrink: 0;
 height: 24px;
 align-items: center;
 flex-shrink: 0;
-padding-top: 100px;
 margin-bottom: 16px;
+display: inline-block;
 }
 
 
@@ -368,5 +388,4 @@ margin-bottom: 16px;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-  padding-bottom: 100px;
 }
