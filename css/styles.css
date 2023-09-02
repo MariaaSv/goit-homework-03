@@ -328,10 +328,6 @@ align-items: flex-start;
 flex-shrink: 0;
 }
 
-.portfolio-container{
-  border-top: none;
-}
-
 .card-content-container{
   display: flex;
   padding: 0px 16px;
@@ -342,6 +338,7 @@ flex-shrink: 0;
   align-self: stretch;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .card-content {
